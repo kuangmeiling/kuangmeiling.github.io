@@ -5,38 +5,138 @@ body {
 }
 
 a {
-    text-decoration: none;
-    color: #343c3f;
+    text-decoration: blink;
+    color: #ec663d;
+}
+
+c {
+    text-decoration: nonr;
+    color: #ec663d;
 }
 
 h1 {
     text-align: center;
 }
 
-table{
+table {
     text-align: center;
-    font-weight: bold;
 }
 
-p{
-    text-indent: 20px;
+p {
+    text-indent: 30px;
 }
 
-h3{
-    background-color: #344e5a;
+h3 {
+    background-color: #ec663d;
     color: white;
-    line-height: 30px;
-    padding-left:10px;
+    line-height: 20px;
+    padding-left: 5px;
 }
 
 .dt {
-    text-align: center;
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    margin-left: 200px;
 }
 
 .container {
-    width: 800px;
+    width: 1200px;
     margin: 0 auto;
     padding: 10px 20px;
     margin-top: 0;
-    background-image: url("bg.jpg")
+    background-image: url("8.jpg");
+    
 }
+
+.he {
+    height: 300px;
+}
+
+.he1 {
+    height: 50px;
+    font-family: 微软雅黑；
+}
+
+.he2 {
+    float: right;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    margin-right: 400px;
+}
+
+.cle {
+    margin-top: 100px;
+}
+
+.cen {
+    height: 250px;
+}
+
+.fxnew {
+    margin-left: 1100px;
+    position: fixed;
+    margin-top: 200px;
+}
+
+@media (max-width:960px) {
+    .container {
+        width: 100%;
+    }
+    .dt {
+        width: 95%;
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+    }
+    .he2 {
+        width: 95%;
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 100px;
+    }
+    .fxnew {
+        margin-left: 550px;
+        position: fixed;
+    }
+    .cle {
+        margin-top: 250px;
+    }
+}
+
+@keyframes myfirst {
+    from {
+        background-image: url("8.jpg");
+    }
+    to {
+        background-image: url("8.jpg");
+    }
+}
+
+.container {
+    animation: myfirst 5s;
+    -moz-animation: myfirst 5s;
+    -webkit-animation: myfirst 5s;
+    -o-animation: myfirst 5s;
+    
+}
+
+h3{
+    transition: width 2s;
+    -moz-transition: width 2s;
+    -webkit-transition: width 2s;
+    -o-transition: width 2s;
+    }
+
+h3:hover{
+    background-color: #c0637f;
+}
+.dt img{  
+    cursor: pointer;  
+    transition: all 0.6s;  
+}  
+.dt img:hover{  
+    transform: scale(1.2);  
+}  
